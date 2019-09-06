@@ -1,0 +1,11 @@
+-- 执行 SQL
+select 
+  TRANS_DATE_KEY
+  ,BEGIN_USE_DATE_KEY
+  ,END_USE_DATE_KEY
+  ,BK_DATE_KEY
+  ,BASE_PRICE_AMT_USD
+  ,RM_CNT
+  ,RM_NIGHT_CNT
+from p_dm_bkg_lodg.lodg_rm_trans_fact
+where BK_DATE_KEY >= '2019-01-01' and BK_DATE_KEY < '2019-02-01' and RM_CNT=1;
